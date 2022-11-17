@@ -27,4 +27,9 @@ public class Prodotto {
 	public int getPriceIva() {
 		return price + (price * iva / 100);
 	}
+	
+	@Override
+	public String toString() {
+		return "Nome: " + name + "\nDescrizione: " + description + "\nCodice: " + code + "\nPrezzo: " + price;
+	}
 }
