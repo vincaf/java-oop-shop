@@ -24,4 +24,7 @@ public class Prodotto {
 		return price;
 	}
 	
+	public int getPriceIva() {
+		return price + (price * iva / 100);
+	}
 }
