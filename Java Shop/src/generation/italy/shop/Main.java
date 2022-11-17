@@ -7,9 +7,8 @@ public class Main {
 		Prodotto product1 = new Prodotto("Computer portatile", "Notebook PC Portatile da 15,6 Pollici", 300);
 		System.out.println(product1.toString());
 		
-		int product1Price = product1.getPrice();
-		int product1Iva = product1.getPriceIva();
-		System.out.println("\nPrezzo: " + product1Price + "€ - Prezzo con IVA: " + product1Iva + "€");
+		Prodotto product2 = new Prodotto("Basso elettrico", "Basso elettrico a 4 corde, con amplificatore e jack", 700);
+		System.out.println("\n" + product2.toString());
 
 	}
 

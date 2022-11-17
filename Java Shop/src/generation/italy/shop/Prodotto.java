@@ -17,7 +17,7 @@ public class Prodotto {
 		this.name = name;
 		this.description = description;
 		this.price = price;
-		this.code = rnd.nextInt(99999);
+		this.code = rnd.nextInt(00000, 99999);
 	}
 	
 	public int getPrice() {
@@ -30,6 +30,9 @@ public class Prodotto {
 	
 	@Override
 	public String toString() {
-		return "Nome: " + name + "\nDescrizione: " + description + "\nCodice: " + code + "\nPrezzo: " + price;
+		return "Nome: " + name 
+				+ "\nDescrizione: " + description 
+				+ "\nCodice: " + code 
+				+ "\nPrezzo: " + price + "€ - Prezzo con Iva: " + getPriceIva() + "€" ;
 	}
 }
