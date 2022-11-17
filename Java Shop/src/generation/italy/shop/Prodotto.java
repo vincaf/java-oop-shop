@@ -1,5 +1,22 @@
 package generation.italy.shop;
 
-public class Prodotto {
+import java.util.Random;
 
+public class Prodotto {
+	
+	int code;
+	String name;
+	String description;
+	int price;
+	int iva = 20;
+	
+	public Prodotto(String name, String description, int price) {
+		
+		Random rnd = new Random();
+		
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.code = rnd.nextInt(99999);
+	}
 }
