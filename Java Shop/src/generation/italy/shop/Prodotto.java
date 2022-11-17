@@ -19,4 +19,9 @@ public class Prodotto {
 		this.price = price;
 		this.code = rnd.nextInt(99999);
 	}
+	
+	public int getPrice() {
+		return price;
+	}
+	
 }
